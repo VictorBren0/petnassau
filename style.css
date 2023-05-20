@@ -13,7 +13,8 @@
     --white: #fff;
     --black-100: #6f6aa3;
     --back-900: #454268;
-    --dark-700: rgba(3, 0, 5, 0.05);;
+    --dark-700: rgba(3, 0, 5, 0.05);
+    ;
     --green-900: #09A892;
     --orange: #E4910C;
 }
@@ -23,6 +24,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
 a:hover {
     color: inherit;
     text-decoration: none;
@@ -59,7 +61,8 @@ header img {
     width: 60%;
     margin: 0 auto;
 }
-header h4{
+
+header h4 {
     margin-right: 2rem;
     font-size: 15px;
 }
@@ -83,12 +86,13 @@ header h4{
     flex-direction: column;
     padding-top: 5rem;
 }
-.carousel-inner{
+
+.carousel-inner {
     position: relative;
     z-index: 1;
 }
 
-.offerContainer{
+.offerContainer {
     width: 100%;
     height: 5rem;
     background-color: var(--dark-700);
@@ -98,17 +102,19 @@ header h4{
     justify-content: space-around;
 }
 
-.itensContent{
+.itensContent {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
 }
-.itensContent ion-icon{
+
+.itensContent ion-icon {
     margin-right: 1rem;
     color: var(--back-900);
     font-size: 40px;
 }
+
 .itens {
     display: flex;
     flex-direction: column;
@@ -117,7 +123,7 @@ header h4{
     color: var(--back-900);
 }
 
-.titleContainer{
+.titleContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -126,12 +132,13 @@ header h4{
     justify-content: center;
     color: var(--back-900);
 }
-.titleContainer ion-icon{
+
+.titleContainer ion-icon {
     font-size: 50px;
     margin-right: 1rem;
 }
 
-.cardofferContainer{
+.cardofferContainer {
     width: 100%;
     height: auto;
     display: flex;
@@ -140,7 +147,7 @@ header h4{
     justify-content: space-evenly;
 }
 
-.cardofferContent{
+.cardofferContent {
     width: 18rem;
     height: 22rem;
     background-color: var(--dark-700);
@@ -150,7 +157,7 @@ header h4{
     position: relative;
 }
 
-.cardofferContent .icon{
+.cardofferContent .icon {
     width: 80px;
     height: auto;
     color: crimson;
@@ -160,26 +167,26 @@ header h4{
     left: -30px;
 }
 
-.cardofferContent img{
+.cardofferContent img {
     width: 12rem;
     height: auto;
     margin: auto;
 }
 
-.titlecard{
+.titlecard {
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
 }
 
-.titleoffer{
+.titleoffer {
     font-size: 1rem;
     text-align: center;
     color: crimson;
     text-decoration-line: line-through;
 }
 
-.titleprice{
+.titleprice {
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
@@ -187,36 +194,55 @@ header h4{
 
 /* Sobre */
 .about {
-    height: 140vh;
+    height: 150vh;
     width: 100%;
     display: flex;
     background: #F7ECFE;
     flex-direction: column;
 }
 
-.aboutContainer{
+.titleContainer2 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+    height: 18rem;
+    justify-content: center;
+    color: var(--back-900);
+}
+
+.titleContainer2 ion-icon {
+    font-size: 50px;
+    margin-right: 1rem;
+}
+
+.aboutContainer {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.aboutAnimals{
+.aboutAnimals {
     width: 70%;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    position: absolute;
+    top: -100px;
 }
 
 
-.aboutAnimals img{
+.aboutAnimals img {
     width: 10rem;
     height: auto;
 }
 
-.aboutContent{
+.aboutContent {
     width: 70%;
     height: auto;
     display: flex;
@@ -225,12 +251,60 @@ header h4{
     justify-content: center;
     background-color: var(--white);
     border-radius: 15px;
-    padding: 3rem 7rem; 
+    padding: 3rem 7rem;
     text-align: center;
     color: var(--back-900);
 }
 
-.aboutContent h1{
+.aboutContent h1 {
     margin-bottom: 3rem;
     font-weight: 700;
+}
+
+.cardPersonContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cardPersonContent {
+    width: 20rem;
+    height: 27rem;
+    background-color: var(--dark-700);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+}
+
+.cardPersonContent img {
+    width: 11rem;
+    height: auto;
+    margin: auto;
+}
+
+.cardPersonContent .titlecard {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.textPerson {
+    font-size: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+/* Contato */
+
+.contact {
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    background: #F7ECFE;
+    flex-direction: column;
 }
