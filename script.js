@@ -6,5 +6,11 @@
 
     dateElement.innerHTML = formattedDate;
 }
-
 updateCurrentDate();
+
+const navbarToggle = document.querySelector('.mobile-menu');
+const navbarMenu = document.querySelector('.menu');
+
+navbarToggle.addEventListener('click', function() {
+  navbarMenu.classList.toggle('active');
+});

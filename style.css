@@ -66,6 +66,15 @@ header img {
     margin-left: 2rem;
 }
 
+.mobile-menu{
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: var(--white);
+    margin: 8px;
+}
 /* nav */
 .menu {
     display: flex;
@@ -92,7 +101,7 @@ header h4 {
 
 /* inicio */
 .home {
-    height: 140vh;
+    height: auto;
     width: 100%;
     display: flex;
     background: #F7ECFE;
@@ -207,7 +216,7 @@ header h4 {
 
 /* Sobre */
 .about {
-    height: 150vh;
+    height: auto;
     width: 100%;
     display: flex;
     background: #F7ECFE;
@@ -222,6 +231,7 @@ header h4 {
     height: 18rem;
     justify-content: center;
     color: var(--back-900);
+    margin-top: 10rem;
 }
 
 .titleContainer2 ion-icon {
@@ -315,7 +325,7 @@ header h4 {
 /* Contato */
 
 .contact {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     background: #F7ECFE;
@@ -324,9 +334,10 @@ header h4 {
 
 .contactContainer {
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
+    margin-bottom: 10rem;
 }
 
 .leftContent {
@@ -347,7 +358,7 @@ header h4 {
 
 .leftContent iframe {
     width: 80%;
-    height: 50%;
+    height: 70%;
     border: none;
     border-radius: 20px;
 }
@@ -395,7 +406,7 @@ footer {
 
 .footerContainer {
     width: 100%;
-    height: 20vh;
+    height: auto;
     background-color: var(--dark-700);
     display: flex;
     flex-direction: row;
@@ -448,7 +459,7 @@ footer {
 }
 
 .service {
-    height: 210vh;
+    height: auto;
     width: 100%;
     display: flex;
     background: #F7ECFE;
@@ -502,6 +513,7 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    margin-bottom: 5rem;
 }
 
 .cardplansContent {
@@ -589,18 +601,171 @@ footer {
     margin-right: 1rem;
 }
 
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vh;
+        height: 92vh;
+        background-color: var(--black-100);
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .menu li{
+        margin-left: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .menu.active{
+        transform: translateX(0%);
+    }
 
-@media (max-width: 1060px){
+}
+@media (max-width: 768px) {
+    .cardofferContainer {
+        flex-direction: column;
+    }
     h1{
-        font-size: 2rem!important;
+        font-size: 1.5rem!;
+    }
+    .titleContact{
+        font-size: 1.5rem;
     }
     h3{
-        font-size: 1.2rem!important;
+        font-size: 1rem;
     }
-    .itensContent ion-icon {
+    p{
+        font-size: 0.8rem;
+    }
+    .cardofferContent {
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    .itensContent ion-icon{
         font-size: 30px;
     }
-    .titleContainer2{
-        margin-bottom: 3rem;
+    .titleContainer ion-icon{
+        font-size: 35px;
+    }
+    .titleContainer2 ion-icon{
+        font-size: 35px;
+    }
+    .titleContainer3 ion-icon{
+        font-size: 35px;
+    }
+    .aboutAnimals{
+        top: -70px;
+    }
+    .aboutAnimals img{
+        width: 7rem;
+    }
+    .cardPersonContainer{
+        flex-direction: column;
+    }
+    .cardPersonContent{
+
+        margin-bottom: 2rem;
+    }
+    .contactContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cardContactContainer {
+        width: 150%;
+    }
+    .cardContactContent ion-icon{
+        font-size: 30px;
+    }
+    .leftContent iframe {
+        width: 150%;
+        height: 150%;
+        border: none;
+        border-radius: 20px;
+    }
+    .serviceContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardserviceContent{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .plansContainer{
+        flex-direction: column;
+    }
+    .cardplansContent{
+        width: 80%;
+        margin-bottom: 10rem;
+    }
+    .cardplansContent img {
+        width: 8rem;
+        margin: auto;
+        position: relative;
+        top: 0rem;
+    }
+    
+    .cardplansContent:nth-child(1) img {
+        top: -3.5rem;
+    }
+    
+    .cardplansContent:nth-child(2) img {
+        top: -4.5rem;
+    }
+    
+    .cardplansContent:nth-child(3) img {
+        top: -4.8rem;
+    }
+    .footerContent h3{
+        font-size: 1rem;
+    } 
+}
+
+@media (max-width: 660px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    .titleContact{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    .itens p{
+        font-size: 0.6rem;
+    }
+    .aboutContent {
+        width: 90%;
+        padding: 1rem 4rem;
+    }
+    .cardContactContent p{
+        font-size: 0.8rem;
+    }
+    .footerBottom p{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 435px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    .titleContact{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    .footerContent h3{
+        font-size: 0.8rem;
+    }
+    .footerContent p{
+        font-size: 0.6rem;
     }
 }
