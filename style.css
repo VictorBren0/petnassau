@@ -68,6 +68,7 @@ header img {
 
 .mobile-menu{
     cursor: pointer;
+    display: none;
 }
 .mobile-menu div{
     width: 32px;
@@ -626,6 +627,7 @@ footer {
     .menu.active{
         transform: translateX(0%);
     }
+    
 
 }
 @media (max-width: 768px) {
