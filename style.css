@@ -178,6 +178,7 @@ header h4 {
     flex-direction: column;
     border-radius: 10px;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cardofferContent .icon {
@@ -278,6 +279,7 @@ header h4 {
     padding: 3rem 7rem;
     text-align: center;
     color: var(--back-900);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .aboutContent h1 {
@@ -302,6 +304,7 @@ header h4 {
     flex-direction: column;
     border-radius: 10px;
     border: 2px solid var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cardPersonContent img {
@@ -362,6 +365,7 @@ header h4 {
     height: 70%;
     border: none;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .rightContent {
@@ -381,6 +385,7 @@ header h4 {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cardContactContent {
@@ -483,6 +488,7 @@ footer {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cardserviceContent img {
@@ -524,6 +530,7 @@ footer {
     flex-direction: column;
     border-radius: 10px;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cardplansContent ul {
