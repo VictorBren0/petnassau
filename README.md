@@ -10,6 +10,8 @@ Conter no site:<br>
 - Seção de depoimentos<br>
 - Deve conter em JavaScript a data atualizada (vide exemplo o site yahoo.com.br)<br>
 
+Deploy: https://petnassau.victorbreno.dev/
+
 Prints:
 <br>
 <br>
